@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Random-passwords</title>
+    <link rel="stylesheet" href="style.css">
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  </head>
+
+<body>
+<main>
+
+<div class ="div1">
+    <p>Выберите язык:</p>
+    <button id = "RUS">Русский</button>
+    <button id = "ENG">Английский</button>
+    <button id = "allShow">Все</button>
+    <p>Выберите,что должен включать в себя пароль</p>
+    <ul>
+        <li><input id="arr_num" type="checkbox" /> Цифры</li>
+        <div id="eng">
+        <li><input id="arr_en" type="checkbox" /> Английский строчные буквы</li>
+        <li><input id="arr_EN" type="checkbox" /> Английский заглавные буквы</li>
+        </div>
+        <div id="rus">
+        <li><input id="arr_ru" type="checkbox" /> Русские строчные буквы</li>
+        <li><input id="arr_RU" type="checkbox" /> Русские заглавные буквы</li>
+        </div>
+        <li><input id="arr_symb" type="checkbox" /> Спецсимволы</li>
+    </ul>
+    
+    <p>Количество символов в пароле: 
+      <input id="passLenght" type="number" step="1" min="1" max="1000" value="1" />
+    </p>
+
+    <p>Сгенерированный пароль: 
+      <input id="result" type="text" value=" "/>
+      <button onclick="copyText()">Копировать</button>
+    </p>
+
+    <p><button id="pass_start">Сгенерировать пароль</button></p>
+</div>
+
+</main>
+<script src="password-generate.js"></script>
+    </body>
+</html>
